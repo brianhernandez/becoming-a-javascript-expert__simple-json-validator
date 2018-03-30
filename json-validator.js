@@ -7,9 +7,6 @@ fileUploadElement.addEventListener('change', function(event) {
   // var default = this.attr("placeholder");
   console.log(this.parentNode.firstChild);
   this.parentNode.firstChild.innerHTML = file;
-  // console.log(this);
-  // console.log(default);
-  // console.log(default);
 });
 
 // $("[type=file]").on("change", function(){
