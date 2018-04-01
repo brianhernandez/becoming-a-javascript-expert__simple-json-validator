@@ -24,6 +24,7 @@ body {
   text-align: center;
   display: block;
   cursor: pointer;
+  transition: background-color .3s ease;
 }
 .fileInputForm .fileInputForm__label:hover {
   background: #8b9caf;
@@ -42,6 +43,7 @@ body {
   margin: 3em auto;
   width: 15em;
   color: #fff;
+  transition: background-color .3s ease;
 }
 .fileInputForm .fileInputForm__submit:hover {
   background-color: #56c5de;
@@ -64,14 +66,35 @@ body {
   font-size: 1em;
   color: #fff;
   margin-top: 1em;
+  transition: background-color .3s ease;
 }
 .textInputForm .textInputForm__submit:hover {
   cursor: pointer;
+  background-color: #56c5de;
 }
 
 .textInputForm__heading {
   text-align: center;
   margin-top: 2em;
+}
+
+/******************************************************************************
+                              Results Tab Styles
+******************************************************************************/
+.codeResults__code {
+  background-color: #2029E7;
+  color: #fff;
+  padding: 10px;
+}
+
+.codeResults__paragraph {
+  padding: 10px;
+}
+.codeResults__paragraph--valid {
+  color: green;
+}
+.codeResults__paragraph--invalid {
+  color: red;
 }
 
 /******************************************************************************
