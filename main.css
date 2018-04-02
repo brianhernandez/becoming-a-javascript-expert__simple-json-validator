@@ -6,6 +6,10 @@ body {
   color: #333;
 }
 
+.simpleJSONHeading {
+  text-align: center;
+}
+
 /******************************************************************************
                               File Input Styles
 ******************************************************************************/
@@ -82,7 +86,7 @@ body {
                               Results Tab Styles
 ******************************************************************************/
 .codeResults__code {
-  background-color: #2029E7;
+  background-color: #242625;
   color: #fff;
   padding: 10px;
 }

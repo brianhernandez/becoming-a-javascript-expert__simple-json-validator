@@ -25,7 +25,7 @@ textSubmitElement.addEventListener('click', function(event) {
 
   resultsMessageElement.className = "codeResults__paragraph";
   codeResultContainer.className = "codeResults__code";
-  codeElement.innerHTML = textareaValue;
+  codeElement.innerHTML = textareaValue.trim();
   preFormattedTextElement.appendChild(codeElement);
   codeResultContainer.appendChild(preFormattedTextElement);
 
@@ -40,8 +40,8 @@ textSubmitElement.addEventListener('click', function(event) {
 
   for (var i = 0; i < textareaValueSplitArray.length; i++) {
     // console.log('textareaValueSplitArray length equals: ' + textareaValueSplitArray.length);
-    var beginJSONPattern = /^{{1}?/g;
-    var endJSONPattern = /^}{1}?/g;
+    var beginJSONPattern = /^{{1}/g;
+    var endJSONPattern = /}{1}$/g;
     var lastKeyValueJSONPattern = /\s*"[\w-$]+":\s{1}"[\w\s,]+"/g;
     var notLastKeyValueJSONPattern = /\s*"[\w-$]+":\s{1}"[\w\s,]+",/g;
 
