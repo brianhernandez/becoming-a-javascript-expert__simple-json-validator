@@ -1,3 +1,4 @@
+'use strict';
 // Obtain both file upload button and text submit button elements and save
 // them to a variable
 var fileUploadElement = document.getElementById('fileUpload');
